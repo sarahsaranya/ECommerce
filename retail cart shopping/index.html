@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothy - TrendNest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="header-container">
+    <div class="brand-name">TrendNest</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button class="search-icon"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="navbar">
+      <a href="#" id="home" onclick="showHomePage()">Home</a>
+      <a href="#" id="login" onclick="window.location.href='login.html'">Login</a>
+      <a href="#" id="Signup" onclick="window.location.href='signup.html'">Signup</a>
+      <a href="wishlist.html" class="wishlist-icon">
+        <img src="wishlist.png" alt="Wishlist" class="icon">
+      </a>
+      <a href="cart.html" class="cart-icon">
+        <img src="addtocart.png" alt="Add to Cart" class="icon">
+      </a>
+    </div>
+    
+  </div>
+
+
+  <div class="carousel">
+    <div class="carousel-background" id="carousel-background"></div>
+    <div class="carousel-dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+ 
+  <section id="collections-section" class="collections-section">
+    <h2>Our Collections</h2>
+    <div class="collections-grid">
+      <div class="collection-item">
+        <a href="kids.html">
+        <img src="kids front.jpeg" alt="Kids Collection">
+        <p>Kid's Collection</p>
+        </a>
+      </div>
+      <div class="collection-item">
+        <a href="mens.html">
+        <img src="mens.jpeg" alt="Men Collection">
+        <p>Men's Collection</p>
+      </a>
+      </div>
+      <div class="collection-item">
+        <a href="womens.html">
+        <img src="women.jpeg" alt="Women Collection">
+        <p>Women's Collection</p>
+      </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="feedback-section">
+    <div class="form-container">
+      <h2>Customer Feedback</h2> 
+      
+      <form class="feedback-form">
+        <input type="text" placeholder="Your Name:" required />
+        <input type="email" placeholder="Your Email:" required />
+        <textarea placeholder="Your Feedback:" rows="5" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+    </section>
+    <section class="feedback-list-section">
+      <h3>What our customers say:</h3>
+    
+      <div class="feedback-grid">
+        <div class="feedback-item">
+          <strong>John Doe</strong>
+          <p>"Great service and fast delivery! Highly recommend this store."</p>
+        </div>
+    
+        <div class="feedback-item">
+          <strong>Jane Smith</strong>
+          <p>"I love the quality of the products. Will definitely shop here again!"</p>
+        </div>
+    
+        <div class="feedback-item">
+          <strong>Emily Johnson</strong>
+          <p>"The customer support was excellent. My queries were addressed promptly."</p>
+        </div>
+    
+        <div class="feedback-item">
+          <strong>Michael Brown</strong>
+          <p>"Fantastic shopping experience! The website is user-friendly."</p>
+        </div>
+    
+        <div class="feedback-item">
+          <strong>Sophia Davis</strong>
+          <p>"The packaging was eco-friendly, and the product exceeded my expectations."</p>
+        </div>
+    
+        <div class="feedback-item">
+          <strong>David Wilson</strong>
+          <p>"Super smooth shopping process. Will definitely recommend to my friends!"</p>
+        </div>
+      </div>
+    </section>
+    
+    
+  
+  
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
